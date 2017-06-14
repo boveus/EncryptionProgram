@@ -41,6 +41,10 @@ I am sending you value 211 - encrypted byte.
 You decrypt it by same scheme with your private key:
 decrypted = (input_value + pri) % 256 = (211 + 133) % 256 = 88;
 
+ascii + public key % 256 = encrypted value
+
+encrypted value + private key % 256 = decrypted value
+
 
 create dictionary of ASCII-bytes correlated to ALPHABET
 use above algorithm to convert/store public/private keys
